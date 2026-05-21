@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCG Vault - Tu Tienda de Cartas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TCG Vault</h1>
+            </div>
+            <ul class="nav-principal">
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li class="menu-desplegable">
+                    <a href="#productos" class="btn-productos">Productos <small>▼</small></a>
+                    <ul class="sub-menu">
+                        <li><a href="#pokemon">Pokémon TCG</a></li>
+                        <li><a href="#magic">Magic: The Gathering</a></li>
+                        <li><a href="#yugioh">Yu-Gi-Oh!</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Especialistas en Coleccionismo TCG</h2>
+            <p>Mirá las últimas aperturas de sobres y novedades de Pokémon 151:</p>
+            <div class="multimedia-contenedor">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="TCG Video" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h2 class="titulo-seccion">Cartas Destacadas</h2>
+            <div class="contenedor-productos">
+                <article class="card">
+                    <img src="img/chari.jpg" alt="Carta TCG 1">
+                    <h3>Charizard EX</h3>
+                    <span class="precio">$45.000</span>
+                    <button>Comprar</button>
+                </article>
+
+                <article class="card">
+                    <img src="img/blas.jpg" alt="Carta TCG 2">
+                    <h3>Blastoise EX</h3>
+                    <span class="precio">$35.000</span>
+                    <button>Comprar</button>
+                </article>
+
+                <article class="card">
+                    <img src="img/vena.jpg" alt="Carta TCG 3">
+                    <h3>Venusaur EX</h3>
+                    <span class="precio">$32.000</span>
+                    <button>Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="resenas">
+            <h2 class="titulo-seccion">Opiniones de Clientes</h2>
+            <div class="grid-resenas">
+                <div class="resena-item">
+                    <h4>Juan Pérez</h4>
+                    <p>"Excelente atención. La carta llegó impecable, un verdadero estado Near Mint."</p>
+                </div>
+                <div class="resena-item">
+                    <h4>Guillermo J.</h4>
+                    <p>"El mejor lugar de Buenos Aires para conseguir las promos de 151 que te falten."</p>
+                </div>
+                <div class="resena-item">
+                    <h4>Novia_TCG</h4>
+                    <p>"Compré carpetas Top Deck y folios. Envío rapidísimo y todo muy bien embalado."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TCG Vault - Buenos Aires, Argentina. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
