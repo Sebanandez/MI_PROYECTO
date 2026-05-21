@@ -421,7 +421,7 @@ footer {
    NUEVO CARRITO FLOTANTE EN EL NAV
    ========================================= */
 .menu-carrito {
-    position: relative; /* Para sostener la cajita flotante */
+    position: relative;
 }
 
 .contador-nav {
@@ -434,9 +434,9 @@ footer {
     margin-left: 3px;
 }
 
-/* Caja contenedora del carrito (oculta por defecto) */
+
 .carrito-flotante {
-    display: none; 
+    display: none;
     position: absolute;
     right: 0;
     top: 100%;
@@ -446,8 +446,8 @@ footer {
     border-top: 3px solid #f3cc14;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
-    z-index: 1000; /* Para que quede por encima del contenido */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
     backdrop-filter: blur(10px);
 }
 
@@ -458,7 +458,7 @@ footer {
     padding-bottom: 5px;
 }
 
-/* Mostrar la cajita al pasar el mouse por encima */
+
 .menu-carrito:hover .carrito-flotante {
     display: block;
 }
@@ -491,4 +491,33 @@ footer {
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* =========================================
+   LOGO CON EFECTO DE LUZ NEÓN CELESTE
+   ========================================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-logo-nav {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.8),
+        0 0 30px rgba(0, 212, 255, 0.4);
+
+    border: 2px solid rgba(0, 212, 255, 0.6);
+    transition: transform 0.3s ease;
+}
+
+
+.img-logo-nav:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 1),
+        0 0 40px rgba(0, 212, 255, 0.6);
 }
